@@ -9,25 +9,8 @@ import {
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import cv from "../assets/Vandan_Bhangale_Resume.pdf";
+import Skills from "./Skills";
 
-const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Node.js",
-  "Express.js",
-  "MongoDB",
-  "MySQL",
-  "Vercel",
-  "Render",
-  "Postman",
-  "Tailwind CSS",
-  "Bootstrap",
-  "Figma",
-  "Git",
-  "GitHub",
-];
 
 export const Hero = () => {
   return (
@@ -84,16 +67,19 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Vandan Bhangale — a Full Stack Developer specializing in React, Node.js, and MongoDB. I build scalable and high-performance web applications with a focus on user experience.
+                Hi, I'm Vandan Bhangale — a Full Stack Developer specializing in
+                React, Node.js, and MongoDB. I build scalable and
+                high-performance web applications with a focus on user
+                experience.
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
               <a href="#contact" rel="noopener noreferrer">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
               </a>
               <a href={cv} download="Vandan_Bhangale_Resume.pdf">
                 <AnimatedBorderButton>
@@ -163,33 +149,52 @@ export const Hero = () => {
         </div>
 
         {/* Skills Section */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
+        <Skills></Skills>
+      </div>
+    </section>
+  );
+};
+
+
+
+
+
+
+
+
+
+
+
+
+//* Experimental Horizontal scrolling skill section
+{
+  /* <div className="mt-20 animate-fade-in animation-delay-600">
           <p className="text-sm text-muted-foreground mb-6 text-center">
             Technologies I work with
           </p>
+
           <div className="relative overflow-hidden">
-            <div
-              className="absolute left-0 top-0 bottom-0 w-32
-             bg-gradient-to-r from-background to-transparent z-10"
-            />
-            <div
-              className="absolute right-0 top-0 bottom-0 w-32
-             bg-gradient-to-l from-background to-transparent z-10"
-            />
-            <div className="flex animate-marquee">
+            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-background to-transparent z-10" />
+            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-background to-transparent z-10" />
+
+            <div className="flex w-max animate-marquee marquee">
               {[...skills, ...skills].map((skill, idx) => (
                 <div key={idx} className="flex-shrink-0 px-8 py-4">
-                  <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
+                  <span className="text-xl font-semibold text-muted-foreground hover:text-foreground transition-colors">
                     {skill}
                   </span>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </div>
+        </div> */
+}
 
-      <div
+
+
+//* Scroll suggession button
+{
+  /* <div
         className="absolute bottom-8 left-1/2 -translate-x-1/2 
       animate-fade-in animation-delay-800"
       >
@@ -200,7 +205,5 @@ export const Hero = () => {
           <span className="text-xs uppercase tracking-wider">Scroll</span>
           <ChevronDown className="w-6 h-6 animate-bounce" />
         </a>
-      </div>
-    </section>
-  );
-};
+      </div> */
+}

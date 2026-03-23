@@ -1,7 +1,7 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import CarImage from "../assets/Car-rental.png";
-import ChatAppImage from "../assets/Chat-app.png"
+import ChatAppImage from "../assets/Chat-app.png";
 
 const projects = [
   {
@@ -26,7 +26,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-32 relative overflow-hidden">
+    <section id="projects" className="py-24 relative overflow-hidden">
       {/* Bg glows */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl" />
@@ -92,12 +92,48 @@ export const Projects = () => {
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <ArrowUpRight
-                    className="w-5 h-5 
+                  {/* <a href={project.link}>
+                    <ArrowUpRight
+                      className="w-5 h-5 
                   text-muted-foreground group-hover:text-primary
                    group-hover:translate-x-1 
                    group-hover:-translate-y-1 transition-all"
-                  />
+                    />
+                  </a> */}
+
+                  <div className="flex gap-3 pt-2">
+                    {/* Live Button */}
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 
+px-3 py-2 text-sm 
+rounded-full sm:rounded-lg
+glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    >
+                      <ArrowUpRight className="w-4 h-4" />
+
+                      {/* Text hidden on small screens */}
+                      <span className="hidden sm:inline">Live</span>
+                    </a>
+
+                    {/* GitHub Button */}
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 
+px-3 py-2 text-sm 
+rounded-full sm:rounded-lg
+glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    >
+                      <Github className="w-4 h-4" />
+
+                      {/* Text hidden on small screens */}
+                      <span className="hidden sm:inline">Code</span>
+                    </a>
+                  </div>
                 </div>
                 <p className="text-muted-foreground text-sm">
                   {project.description}

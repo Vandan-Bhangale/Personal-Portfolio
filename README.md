@@ -1,16 +1,96 @@
-# React + Vite
+# 🌐 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive developer portfolio built to showcase my skills, projects, and experience as a Full Stack Developer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+👉 [View Portfolio](https://personal-portfolio-seven-gamma-27.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧑‍💻 About Me
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I am a Full Stack Developer specializing in the MERN stack.
+I build scalable, user-friendly web applications with a focus on performance and clean code.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React
+* JavaScript
+* Tailwind CSS
+* HTML
+* CSS
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* REST APIs
+
+### Tools
+
+* Git
+* GitHub
+* Postman
+* VS Code
+
+---
+
+## 💼 Featured Projects
+
+### 🚗 Car Rental Platform
+
+* Full-stack MERN application for booking rental cars
+* Includes authentication, booking system, and responsive UI
+
+### 💬 Real-Time Chat App
+
+* Real-time messaging using Socket.io
+* Authentication and scalable backend
+
+---
+
+## ✨ Features
+
+* Responsive design (mobile + desktop)
+* Modern UI with smooth animations
+* Interactive project showcase
+* Contact form integration
+
+---
+
+## 📂 Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/Vandan-Bhangale/Personal-Portfolio.git
+
+# Navigate to project folder
+cd Personal-Portfolio
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+---
+
+## 📬 Contact
+
+* Email: [vandan9804@gmail.com](mailto:your-email@gmail.com)
+* Location: Vadodara, Gujarat, India
+
+---
+
+## ⭐ Acknowledgements
+
+If you like this project, feel free to give it a ⭐ on GitHub!
